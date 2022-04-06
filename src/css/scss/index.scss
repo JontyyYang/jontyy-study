@@ -1,0 +1,61 @@
+// 默认变量值
+
+$height2: 100px;
+
+@import './child';
+
+// 测试混合器
+@import './mixin';
+
+// 测试继承
+@import './extend';
+
+// css的@import是在执行到@import的时候才会去下载其他css文件，会导致页面加载起来比较慢
+// scss文件的@import在生成css文件的时候就把相关文件导入进来，意味着所有的样式都归纳到一个css文件中没无需发起额外的下载请求。
+
+/**
+  对于只是单纯用来导入的， 不做其他用处的scss文件【意味着我不想他们生成css文件】，需要采用单独的命名，也就是 _xxx  下划线开头
+  在导入的时候可以省略掉这个下划线
+*/
+
+// 变量可以放在外面，整个scss文件可以用
+/** 
+  变量名 采取中划线更加合适
+*/
+$bg-color: #ccc;
+$height: 100px;
+
+.container {
+  // 变量可以定义在块内，只能在该快作用域使用
+  $color: red;
+  color: $color;
+  background-color: $bg-color;
+  height: $height;
+
+  // css样式是可以嵌套的
+  border: {
+    width: 5px;
+    color: green;
+    style: solid;
+  }
+
+  padding: {
+    top: 5px;
+    right: 10px;
+    bottom: 5px;
+    left: 10px;
+  }
+}
+
+// css群组选择器也是支持嵌套的
+
+/* 注意： 所有用// 的注释都不会生成，所以用// 比较好 */
+
+// 测试混合器
+.round {
+  margin-top: 20px;
+  background: {
+    color: red;
+  }
+  @include round();
+}

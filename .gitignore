@@ -1,0 +1,6 @@
+# 必须要在这个文件没有push前设置规则，否则规则是不生效的， 要删除，add，commit 再重新添加该文件
+node_modules/
+/yarn.lock
+/yarn-error.log
+coverage/
+package-lock.json

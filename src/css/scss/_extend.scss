@@ -1,0 +1,11 @@
+.error {
+  color: red;
+}
+
+.error-text {
+  @extend .error;
+
+  background: blue;
+
+  margin-top: 20px;
+}

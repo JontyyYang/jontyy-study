@@ -1,0 +1,14 @@
+.child {
+  font: {
+    size: 20px;
+    weight: bolder;
+  }
+}
+
+// 这里需要结合index.scss文件查看， 需要在导入之前， 先定义一个变量，同时，这里的变量需要是default
+$height2: 200px !default;
+.default {
+  height: $height2;
+  background: #ccc;
+  margin-top: 20px;
+}

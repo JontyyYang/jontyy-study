@@ -1,0 +1,15 @@
+// 可以看是否能给混合器起一个名字，如果能，说明可能不错，如果不能， 可能不适合使用混合器
+// 避免滥用
+
+@mixin round {
+  border: {
+    radius: 50%;
+  }
+
+  @include square(100px, 200px);
+}
+
+@mixin square($height, $width: $height) {
+  width: $width;
+  height: $height;
+}
