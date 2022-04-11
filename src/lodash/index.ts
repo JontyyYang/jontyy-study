@@ -4,6 +4,7 @@ import compact from './compact';
 import concat from './concat';
 import difference from './difference';
 import differenceBy from './differenceBy';
+import differenceWith from './differenceWith';
 import last from './last';
 
-export default {chunk, compact, concat, difference, differenceBy, last};
+export default {chunk, compact, concat, difference, differenceBy, last, differenceWith};
