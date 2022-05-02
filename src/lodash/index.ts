@@ -6,5 +6,6 @@ import difference from './difference';
 import differenceBy from './differenceBy';
 import differenceWith from './differenceWith';
 import last from './last';
+import drop from './drop';
 
-export default {chunk, compact, concat, difference, differenceBy, last, differenceWith};
+export default {chunk, compact, concat, difference, differenceBy, last, differenceWith, drop};
