@@ -1,4 +1,4 @@
-const dropRight = (array: any[], length = 1) => {
+const dropRight = (array: any[], length = 1): any[] => {
   if (!Array.isArray(array)) {
     return [];
   }

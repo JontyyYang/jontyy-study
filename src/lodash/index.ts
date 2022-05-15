@@ -7,7 +7,9 @@ import differenceBy from './differenceBy';
 import differenceWith from './differenceWith';
 import last from './last';
 import drop from './drop';
-import dropRight from './dropRigh';
+import dropRight from './dropRight';
+import dropRightWhile from './dropRightWhile';
+import fill from './fill';
 
 export default {
   chunk,
@@ -19,4 +21,6 @@ export default {
   differenceWith,
   drop,
   dropRight,
+  dropRightWhile,
+  fill,
 };
