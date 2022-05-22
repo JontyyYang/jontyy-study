@@ -5,7 +5,6 @@ const fill = (array: any[], value: any, startIndex = 0, endIndex = array.length)
     fillArray.push(value);
   }
   array.splice(startIndex, length, ...fillArray);
-  console.error(array, 'jontyyang 55-52');
 
   return array;
 };

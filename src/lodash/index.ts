@@ -10,6 +10,7 @@ import drop from './drop';
 import dropRight from './dropRight';
 import dropRightWhile from './dropRightWhile';
 import fill from './fill';
+import findIndex from './findIndex';
 
 export default {
   chunk,
@@ -23,4 +24,5 @@ export default {
   dropRight,
   dropRightWhile,
   fill,
+  findIndex,
 };

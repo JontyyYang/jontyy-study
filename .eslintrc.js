@@ -22,6 +22,7 @@ module.exports = {
   },
   rules: {
     '@typescript-eslint/ban-ts-comment': 'off',
+    'prettier/prettier': 'off',
     // 如果有不适合的规则，可以在此调整
     // ...
   },
