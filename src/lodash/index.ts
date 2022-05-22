@@ -11,6 +11,7 @@ import dropRight from './dropRight';
 import dropRightWhile from './dropRightWhile';
 import fill from './fill';
 import findIndex from './findIndex';
+import findLastIndex from './findLastIndex';
 
 export default {
   chunk,
@@ -25,4 +26,5 @@ export default {
   dropRightWhile,
   fill,
   findIndex,
+  findLastIndex,
 };
